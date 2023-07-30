@@ -1,0 +1,48 @@
+body {
+    background: #fff8fc;
+}
+
+.header_base{
+    background-color: #fff2fb;
+    min-height: 100px;
+    width: 100%;
+}
+
+.header_div {
+    display: flex;
+    margin: auto;
+    font-size: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_h1{
+    font-size: 170%;
+    color: #2470ff;
+}
+
+.content_div{
+    display: flex;
+}
+.text_div{
+    display: flex;
+    margin: auto;
+    font-size: 4rem;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: center;*/
+    border-right: 4px solid #888888;
+    border-bottom: 4px solid #888888;
+    border-left: 4px solid #888887;
+
+}
+a {
+    background-image: linear-gradient(to right, #388ef3, #f341e8); /* Градиентный фон для текста */
+    -webkit-background-clip: text; /* Указываем, что фон должен применяться только к тексту (для Safari) */
+    color: transparent; /* Делаем текст прозрачным */;
+}
+/*.gradient-text {*/
+/*    background-image: linear-gradient(to right, #ff0000, #00ff00); !* Градиентный фон для текста *!*/
+/*    -webkit-background-clip: text; !* Указываем, что фон должен применяться только к тексту (для Safari) *!*/
+/*    color: transparent; !* Делаем текст прозрачным *!*/
+/*}*/
