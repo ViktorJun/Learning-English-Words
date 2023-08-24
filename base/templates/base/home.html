@@ -1,4 +1,6 @@
 <!doctype html>
+{% load static %}
+
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -29,7 +31,7 @@
         <li class="advertising_li2">Your English progress is what matters the most to us. If you’re not satisfied after 12 weeks of learning, you get your money back.
         </li>
     </ul>
-<!--    <img src="scale_1200.png" alt="error">-->
+<!--    <img src="{% static 'scale_1200.png' %}" alt="error">-->
 </div>
 <!--/advertising-->
 <!--content-->
@@ -44,12 +46,23 @@
 <!--footer-->
 <footer>
     <div class="footer_base">
-        <ul class="footer_ul">
-            <li class="footer_li">How it works</li>
-            <li class="footer_li">About us</li>
-            <li class="footer_li">Contact us</li>
-            <li class="footer_li">Help</li>
-        </ul>
+        <div class="footer_row">
+            <ul class="footer_cont">
+                <li class="test"><a href="" class="footer_cont_a">github</a></li>
+                <li><a href="" class="footer_cont_a">github</a></li>
+                <li><a href="" class="footer_cont_a">github</a></li>
+                <li><a href="" class="footer_cont_a">github</a></li>
+            </ul>
+        </div>
+        <div class="footer_column">
+            <ul class="footer_inf">
+                <li><a href="" class="footer_li_a">How it works</a></li>
+                <hr class="hr">
+                <li><a href="" class="footer_li_a">About us</a></li>
+                <li><a href="" class="footer_li_a">Contact us</a></li>
+                <li><a href="" class="footer_li_a">Help</a></li>
+            </ul>
+        </div>
     </div>
 </footer>
 <!--/footer-->
