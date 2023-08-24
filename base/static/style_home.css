@@ -1,7 +1,7 @@
 body {
     background: #fff8fc;
 }
-
+/*header*/
 .header_base{
     background-color: #fff2fb;
     min-height: 100px;
@@ -10,17 +10,76 @@ body {
 
 .header_div {
     display: flex;
+    justify-content: space-between;
     margin: auto;
-    font-size: 4rem;
     align-items: center;
-    justify-content: center;
+    font-size: 3rem;
+    width: 90%;
+
+
+
+
+    /*display: flex;*/
+    /*margin: auto;*/
+    /*font-size: 4rem;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
 }
 
 .header_h1{
     font-size: 170%;
     color: #2470ff;
 }
+ul.header_ul{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+}
+a.header_li1 {
+    background-image: linear-gradient(to right, #3a95ff, #42b4e5);
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
+a.header_li1:hover {
+    background-image: linear-gradient(to right, #2b71c0, #328daf);
+}
+.header_li2 {
+    padding: 10px 10px; /* Задаем внутренние отступы для создания овального фона */
+    background-image: linear-gradient(to right, #a43b9e, #e150ca);
+    border-radius: 30px; /* Задаем радиус для создания овала (значение радиуса может быть различным в зависимости от размера ссылки, примерно половина высоты ссылки) */
+    color: #ffffff;
+}
+.header_li2:hover {
+    padding: 10px 10px; /* Задаем внутренние отступы для создания овального фона */
+    background-image: linear-gradient(to right, #853381, #b03c9d);
+    border-radius: 30px; /* Задаем радиус для создания овала (значение радиуса может быть различным в зависимости от размера ссылки, примерно половина высоты ссылки) */
+    color: #ffffff;
+}
+/*/header*/
+
+/*advertising*/
+.advertising_div{
+    display: flex;
+    background-color: #f6efef;
+}
+
+.advertising_ul{
+    display: flex;
+    margin: 0 30% 0 5%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.advertising_li1{
+    font-size: 3rem;
+}
+
+.advertising_li2{
+    font-size: 2rem;
+}
+/*/advertising*/
+
+/*content*/
 .content_div{
     display: flex;
 }
@@ -30,17 +89,48 @@ body {
     font-size: 4rem;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 0 5px red;
     /*justify-content: center;*/
-    border-right: 4px solid #888888;
-    border-bottom: 4px solid #888888;
-    border-left: 4px solid #888887;
+    /*border: 4px solid #888888;*/
+    /*border-right: 4px solid #888888;*/
+    /*border-bottom: 4px solid #888888;*/
+    /*border-left: 4px solid #888888;*/
 
 }
-a {
+a.text_div_a{
     background-image: linear-gradient(to right, #388ef3, #f341e8); /* Градиентный фон для текста */
     -webkit-background-clip: text; /* Указываем, что фон должен применяться только к тексту (для Safari) */
     color: transparent; /* Делаем текст прозрачным */;
 }
+
+a.text_div_a:hover{
+    background-image: linear-gradient(to right, #c736bc, #2f74c7); /* Градиентный фон для текста */
+}
+/*/content*/
+
+/*footer*/
+.footer_base{
+    display: flex;
+    margin: 10% 0 0 0;
+    background-color: #282828;
+    justify-content: center;
+}
+
+.footer_ul{
+    display: flex;
+    margin: 5% 0 5% 0;
+    flex-direction: column;
+    color: #fff3e9;
+    font-size: 2rem;
+}
+
+.footer_li{
+
+}
+
+/*/footer*/
+
+
 /*.gradient-text {*/
 /*    background-image: linear-gradient(to right, #ff0000, #00ff00); !* Градиентный фон для текста *!*/
 /*    -webkit-background-clip: text; !* Указываем, что фон должен применяться только к тексту (для Safari) *!*/
