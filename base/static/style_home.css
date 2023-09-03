@@ -114,15 +114,17 @@ a.text_div_a:hover{
     display: flex;
     margin: 10% 0 0 0;
     background-color: #282828;
-    font-size: 3rem;
     justify-content: center;
     flex-direction: column;
-
 }
 
 .footer_row{
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
+    justify-content: space-between;
+    margin: 0 3% 0 3%;
+    font-size: 2rem;
+    color: #c9c6c6;
 }
 
 .footer_cont{
@@ -135,6 +137,7 @@ a.text_div_a:hover{
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    font-size: 3rem;
 }
 
 .footer_inf{
@@ -144,8 +147,24 @@ a.text_div_a:hover{
 
 
 
-.test{
+.footer_li_frontend{
+    margin-right: 1rem;
+}
 
+.footer_li_backend{
+    margin-right: 1rem;
+}
+
+a.footer_cont_a{
+    color: #c9c6c6;
+}
+
+a.footer_cont_a:hover{
+    color: #989595;
+}
+
+a.footer_inf_a{
+    color: #c9c6c6;
 }
 
 /*/footer*/
