@@ -15,26 +15,29 @@ body {
     align-items: center;
     font-size: 3rem;
     width: 90%;
-
-
-
-
-    /*display: flex;*/
-    /*margin: auto;*/
-    /*font-size: 4rem;*/
-    /*align-items: center;*/
-    /*justify-content: center;*/
 }
 
 .header_h1{
     font-size: 170%;
-    color: #2470ff;
+
 }
+
+a.header_a{
+    color: #2470ff;
+
+}
+
+a.header_a:hover{
+    color: #1b4ebd;
+
+}
+
 ul.header_ul{
     display: flex;
     width: 20%;
     justify-content: space-between;
 }
+
 a.header_li1 {
     background-image: linear-gradient(to right, #3a95ff, #42b4e5);
     -webkit-background-clip: text;
@@ -44,12 +47,14 @@ a.header_li1 {
 a.header_li1:hover {
     background-image: linear-gradient(to right, #2b71c0, #328daf);
 }
+
 .header_li2 {
     padding: 10px 10px; /* Задаем внутренние отступы для создания овального фона */
     background-image: linear-gradient(to right, #a43b9e, #e150ca);
     border-radius: 30px; /* Задаем радиус для создания овала (значение радиуса может быть различным в зависимости от размера ссылки, примерно половина высоты ссылки) */
     color: #ffffff;
 }
+
 .header_li2:hover {
     padding: 10px 10px; /* Задаем внутренние отступы для создания овального фона */
     background-image: linear-gradient(to right, #853381, #b03c9d);
@@ -58,66 +63,56 @@ a.header_li1:hover {
 }
 /*/header*/
 
-/*advertising*/
-.advertising_div{
-    display: flex;
-    background-color: #f6efef;
-    align-items: center;
-}
-
-.advertising_ul{
-    display: flex;
-    margin: 0 25% 0 5%;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.advertising_li1{
-    font-size: 3rem;
-}
-
-.advertising_li2{
-    font-size: 2rem;
-}
-
-.advertising_img{
-    width: 15%;
-    height: 15%;
-    margin-right: 5%;
-}
-/*/advertising*/
-
 /*content*/
-.content_div{
+.content{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10%;
-}
-.text_div{
-    display: flex;
-    margin: auto;
-    font-size: 4rem;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 0 5px pink;
-    /*justify-content: center;*/
-    /*border: 4px solid #888888;*/
-    /*border-right: 4px solid #888888;*/
-    /*border-bottom: 4px solid #888888;*/
-    /*border-left: 4px solid #888888;*/
-
+    font-size: 3rem;
+    background: #fff8fc;
 }
-a.text_div_a{
+
+.content_ul{
+    padding: 0 25% 0 25%;
+    border: 3px solid #1b1b1b;
+    margin: 20px 0 0 0;
+    box-shadow: 0 0 40px 5px rgba(255, 192, 203, 0.4);
+}
+.content_div_p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0 10px 0;
+}
+
+.content_p{
+    color: #da49e8;
+}
+
+a.content_table_a{
+    color: #2b71c0;
+}
+
+a.content_table_a:hover{
+    color: #235b9a;
+}
+
+a.content_a{
     background-image: linear-gradient(to right, #388ef3, #f341e8); /* Градиентный фон для текста */
     -webkit-background-clip: text; /* Указываем, что фон должен применяться только к тексту (для Safari) */
     color: transparent; /* Делаем текст прозрачным */;
 }
 
-a.text_div_a:hover{
+a.content_a:hover{
     background-image: linear-gradient(to right, #c736bc, #2f74c7); /* Градиентный фон для текста */
 }
-/*/content*/
 
+.content_hr {
+    border: none;
+    border-top: 5px solid rgba(201, 198, 198, 0.15); /* Цвет и стиль линии */
+    margin: 0 0; /* Отступы сверху и снизу */
+}
+/*/content*/
 
 /*footer*/
 .footer_base{
@@ -205,58 +200,3 @@ a.footer_inf_a:hover{
 
 
 /*/footer*/
-
-
-
-
-/*.footer_cont{*/
-/*    display: flex;*/
-/*    width: 0;*/
-
-/*}*/
-
-/*.footer_cont_li{*/
-/*    display: flex;*/
-/*    margin: 0 10%;*/
-/*}*/
-
-
-/*.footer_cont_a{*/
-/*    color: red;*/
-/*    font-size: 3rem;*/
-/*    margin: 0 50%;*/
-/*}*/
-
-/*.footer_base{*/
-/*    display: flex;*/
-/*    margin: 10% 0 0 0;*/
-/*    background-color: #282828;*/
-/*    justify-content: center;*/
-/*}*/
-
-/*.footer_inf{*/
-/*    display: flex;*/
-/*    margin: 5% 0 5% 0;*/
-/*    flex-direction: column;*/
-/*    font-size: 2rem;*/
-/*}*/
-
-/*a.footer_li_a{*/
-/*    color: #ffffff;*/
-
-/*}*/
-
-/*a.footer_li_a:hover{*/
-/*    color: #c8c8c8;*/
-/*}*/
-
-
-
-/*/footer*/
-
-
-/*.gradient-text {*/
-/*    background-image: linear-gradient(to right, #ff0000, #00ff00); !* Градиентный фон для текста *!*/
-/*    -webkit-background-clip: text; !* Указываем, что фон должен применяться только к тексту (для Safari) *!*/
-/*    color: transparent; !* Делаем текст прозрачным *!*/
-/*}*/

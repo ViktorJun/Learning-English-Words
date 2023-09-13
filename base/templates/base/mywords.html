@@ -1,18 +1,81 @@
-{% extends "base/master.html" %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>List of your words:</title>
+    <link rel="stylesheet" type="text/css" href="../../static/zero.css">
+    <link rel="stylesheet" type="text/css" href="../../static/style_mywords.css">
+</head>
+<body>
 
-{% block title %}
-    List of your words:
-{% endblock %}
+<!--header-->
+<header class="header_base">
+    <div class="header_div">
+        <h1 class="header_h1"><a href="/ " class="header_a">Learning English Words</a></h1>
+        <ul class="header_ul">
+            <li><a href="#" class="header_li1">Sign in</a></li>
+            <li><a href="#" class="header_li2">Sign up</a></li>
+        </ul>
+    </div>
+</header>
+<!--/header-->
+<!--content-->
+    <div class="content">
+        <ul class="content_ul">
+            <div class="content_div_p">
+                <a class="content_a" href="/create_word">Add a new word</a>
+                <p class="content_p">Your words:</p>
+            </div>
+            {% for x in mywords %}
+            <li><a class="content_table_a" href="details/{{ x.id }}"> {{ x.eng_word }}: {{ x.translate_word }}</a></li>
+            <hr class="content_hr">
+            {% endfor %}
+        </ul>
+    </div>
+<!--/content-->
 
-{% block content %}
-    <h1><a href="/ ">Learning Eng Words</a> </h1>
+<!--footer-->
+<footer>
+    <div class="footer_base">
+        <div class="footer_row">
+            <ul class="footer_cont">
+                <li class="footer_li_frontend">Github frontend developer: </li>
+                <li><a href="https://github.com/ViktorJun" class="footer_cont_a" target="_blank">Bulash Viktor</a></li>
+            </ul>
+            <ul class="footer_cont">
+                <li class="footer_li_backend">Github backend developer: </li>
+                <li><a href="https://github.com/SasAlexx" class="footer_cont_a" target="_blank">Alexander Kovalenko</a></li>
+            </ul>
+        </div>
+        <hr class="footer_hr_white">
+        <div class="footer_column">
+            <ul class="footer_inf">
+                <li><a href="" class="footer_inf_a">How it works</a></li>
+                <li><a href="" class="footer_inf_a">About us</a></li>
+                <li><a href="" class="footer_inf_a">Contact us</a></li>
+                <li><a href="" class="footer_inf_a">Help</a></li>
+            </ul>
+        </div>
+        <hr class="footer_hr_gray">
+        <p class="footer_year">©2023 - Production of cool programmers</p>
+    </div>
+</footer>
+<!--/footer-->
+</body>
+</html>
 
-    <ul>
-        {% for x in mywords %}
-            <li><a href="details/{{ x.id }}"> {{ x.eng_word }}: {{ x.translate_word }}</a></li>
-        {% endfor %}
-    </ul>
-    <a href="/create_word">Add a new word</a>
 
-{% endblock %}
+
+
+
+
+
+
+
+
+
+
 
